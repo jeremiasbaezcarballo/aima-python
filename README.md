@@ -1,4 +1,70 @@
+# Fork AIMA-PYTHON Jeremias Baez Carballo
 
+En este repositorio se encuentra una traducción de los notebooks de python del repositorio original. 
+
+Para acceder a ellos, ejecutar el mismo setup que el planteado mas abajo en la sección de instalacion, con la modificacion de la URL del repositorio y deben revisar estar posicionados en el  branch "castellano" (esta como default en el fork, pero si no encuentran los archivos revisen esto).
+
+Bajar el repositorio:
+
+`git clone https://github.com/jeremiasbaezcarballo/aima-python`
+
+Chequear que estamos en el branch "castellano". Instalar las dependencias basicas para que el proyecto corra en tu sistema:
+
+```
+cd aima-python
+git status
+pip install -r requirements.txt
+```
+
+Bajar los datasets [`aima-data`](https://github.com/aimacode/aima-data) del repositorio submodulo:
+
+```
+git submodule init
+git submodule update
+```
+
+Esperar a que se terminen de bajar los datasets. Despues instalar `pytest` para poder probar el ambiente.
+
+`pip install pytest`
+
+Finalmente correr los tests:
+
+`py.test`
+
+## Traducciones
+Los archivos que contienen las traducciones tienen el sufijo `_es`.
+
+
+1. [**Introducción**](./intro_es.ipynb)
+
+2. [**Agentes**](./agents_es.ipynb)
+
+3. [**Busqueda**](./search_es.ipynb)
+
+4. [**Busqueda - 4th edition**](./search4e_es.ipynb)
+
+4. [**Games**](./games_es.ipynb)
+
+5. [**Problemas de satisfacción de restricciones**](./csp_es.ipynb)
+
+6. [**Logica**](./logic_es.ipynb)
+
+7. [**Planing**](./planning_es.ipynb)
+
+8. [**Probabilidades**](./probability_es.ipynb)
+
+9. [**Proceso de Decisión de Markov**](./mdp_es.ipynb)
+
+10. [**Aprendizaje**](./learning_es.ipynb)
+
+11. [**Aprendizaje reforzado**](./reinforcement_learning_es.ipynb)
+
+12. [**Herramientas estadísticas de procesamiento de lenguaje**](./text_es.ipynb)
+
+13. [**Procesamiento de lenguaje natural**](./nlp_es.ipynb)
+
+
+---
 
 # `aima-python` [![Build Status](https://travis-ci.org/aimacode/aima-python.svg?branch=master)](https://travis-ci.org/aimacode/aima-python) [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/aimacode/aima-python)
 
