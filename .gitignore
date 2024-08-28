@@ -76,3 +76,10 @@ target/
 # for macOS
 .DS_Store
 ._.DS_Store
+
+
+.venv
+
+.local_settings
+
+.ipython

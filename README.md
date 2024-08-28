@@ -271,3 +271,15 @@ Many thanks for contributions over the years. I got bug reports, corrected code,
 [search]:../master/search.py
 [utils]:../master/utils.py
 [text]:../master/text.py
+
+
+# Setup docker
+
+Install Docker on your machine to easily setup a development environment
+
+## Docker environment jupyter server
+
+docker build --rm -t aima-env .
+
+docker run -i -t -p 8888:8888 -v "${PWD}":/home/jupyter aima-env
+
